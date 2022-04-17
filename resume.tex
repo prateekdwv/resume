@@ -1,0 +1,296 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry} % Document margins
+
+\usepackage{etoolbox,refcount}
+\usepackage{multicol}
+
+\usepackage{etoolbox,refcount}
+\usepackage{multicol}
+\usepackage{xcolor}
+
+\usepackage{fontspec}
+\usepackage{polyglossia}
+
+\setmainlanguage{english}
+\setotherlanguages{hindi} %% or other languages
+
+\newfontfamily\devanagarifont[Script=Devanagari]{Lohit-Devanagari.ttf}
+
+\definecolor{highlight}{HTML}{B40404}
+
+\newcounter{countitems}
+\newcounter{nextitemizecount}
+\newcommand{\setupcountitems}{%
+  \stepcounter{nextitemizecount}%
+  \setcounter{countitems}{0}%
+  \preto\item{\stepcounter{countitems}}%
+}
+\makeatletter
+\newcommand{\computecountitems}{%
+  \edef\@currentlabel{\number\c@countitems}%
+  \label{countitems@\number\numexpr\value{nextitemizecount}-1\relax}%
+}
+\newcommand{\nextitemizecount}{%
+  \getrefnumber{countitems@\number\c@nextitemizecount}%
+}
+\newcommand{\previtemizecount}{%
+  \getrefnumber{countitems@\number\numexpr\value{nextitemizecount}-1\relax}%
+}
+\makeatother    
+\newenvironment{AutoMultiColItemize}{%
+\ifnumcomp{\nextitemizecount}{>}{3}{\begin{multicols}{2}}{}%
+\setupcountitems\begin{itemize}}%
+{\end{itemize}%
+\unskip\computecountitems\ifnumcomp{\previtemizecount}{>}{3}{\end{multicols}}{}}
+
+
+
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Prateek Dwivedi} % Your name
+\altname{\texthindi{प्रतीक द्विवेदी}}
+\address{KD213, Indian Institute of Technology, Kanpur} % Your address
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+\address{+91 8800 291 032 \\ pdwivedi@cse.iitk.ac.in} % Your phone number and email
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf Indian Institute of Technology Kanpur} \hfill {\em Kanpur, India} 
+\\ {Doctor of Philosophy} \hfill {\em 2018 - Ongoing}
+\\ Computer Science \& Engineering
+
+{\bf KCC Institute of Technology and Management} \hfill {\em Gr. Noida, India} 
+\\ Bachelor of Technologies\hfill {\em 2013 - 2017}
+\\ Computer Science \& Engineering
+
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Research Interest
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Research Interests}
+  Broadly I am interested in the Theoretical Aspects of Computer Science. Specifically, my interest lies in Algebraic Complexity Theory. Problems in Algorithms and Cryptography intrigues me as well. 
+\end{rSection}
+
+\vspace{1em}
+%-------------------------------------------
+%     PUBLICATIONS
+%-------------------------------------------
+
+\begin{rSection}{Publications}
+    \item {\bf Demystifying the border of depth-3 algebraic circuits.} \hfill \emph{2021} \\
+    {\em with Pranjal Dutta and Nitin Saxena.}\\
+    {\em 62nd Annual Symposium on Foundations of Computer Science (FOCS)} \\
+    {\em\color{highlight}Invited in the special issue of SIAM Journal on Computing (SICOMP) }
+    
+    \item {\bf Deterministic identity testing paradigms for bounded top-fanin depth-4 circuits} \hfill \emph{2021} \\
+    {\em with Pranjal Dutta and Nitin Saxena.}\\
+    {\em 36th Computational Complexity Conference (CCC)}\\
+    {\em The full version is currently under review in SIAM Journal on Computing (SICOMP)}
+    
+\end{rSection}
+
+\vspace{1em}
+
+%------------------------------------------
+%        TALKS
+%------------------------------------------
+
+\begin{rSection}{Academic Talks and Seminars}
+    \item Treading the Border Complexity and Identity Testing Paradigms. \hfill {\em Feb 2022}
+    \\ {\em PhD State of The Art Seminar, IIT Kanpur}
+    
+    \item Deterministic identity testing paradigms for bounded top-fanin depth 4 circuits. \hfill {\em Oct 2021}
+    \\ {\em Invited Talk, CS Theory Seminar at Georgetown University.}
+    
+    \item Deterministic identity testing paradigms for bounded top-fanin depth-4 circuits. \hfill {\em July 2021}
+    \\ {\em Conference Talk, CCC'21.}
+    
+    \item Information-Theoretic And Algorithmic Thresholds For Group Testing \hfill {\em June 2020}
+    \\ {\em PhD Comprehensive Evaluation, IIT Kanpur.}
+    
+    \item On Approximative Closure of Algebraic Complexity Classes \hfill {\em Sept 2019}
+    \\ {\em SIGTACS, IIT Kanpur.}
+\end{rSection}
+
+\vspace{1em}
+\newpage
+
+% %-------------------------------------------
+% %     Relevant Courses
+% %-------------------------------------------
+% \begin{rSection}{Relevant Courses}
+% $\bullet$ Arithmetic Circuit Complexity $\bullet$ Computational Number Theory \& Algebra $\bullet$ Randomized methods in Computational Complexity $\bullet$ Design and Analysis of Algorithms $\bullet$ Randomized Algorithms $\bullet$ Data Structures $\bullet$ Discrete Mathematics and Graph Theory $\bullet$ Numerical and Statistical Techniques $\bullet$ Theory of Computation.
+% \end{rSection}
+
+\begin{rSection}{Professional Contributions}
+    \item Reviewed research papers for conferences and journals: CCC, ITCS, SODA, SIAM Journal on Computing.
+    \item Regularly organise talks and seminars in a special interest group at CSE, IIT Kanpur.
+    \item Instrumental in the development of upcoming blog on Algebraic Complexity Theory.
+\end{rSection}
+
+\vspace{1em}
+
+
+%-------------------------------------------
+%     Research EXPERIENCE
+%-------------------------------------------
+\begin{rSection}{Conferences and Workshop Attended}
+\item 62nd Annual Symposium on Foundations of Computer Science (FOCS)\hfill {\em Feb 2022}
+\\ {\em Denver, Colorado}
+\\ {\em Attended Virtually}
+
+\item 36th Computational Complexity Conference (CCC), 2021. \hfill {\em July 2021}
+\\ {\em Toronto, Ontario, Canada}
+\\ {\em Attended Virtually}
+
+\item 48th International Colloquium on Automata, Languages, and Programming (ICALP) \hfill {\em July 2021}
+\\ {\em Glasgow, Scotland}
+\\ {\em Attended Virtually}
+
+\item 52nd ACM Symposium on Theory of Computing (STOC) \hfill {\em June 2020}
+\\ {\em Chicago, US}
+\\ {\em Attended Virtually}
+
+\item Workshop on Algebraic Complexity Theory \hfill {\em March 2019} \\ {\em ICTS, Bengaluru}
+
+\end{rSection}
+
+\vspace{1em}
+
+% %-------------------------------------------
+% %     Academic Achievements
+% %-------------------------------------------
+\begin{rSection}{Academic Achievements}
+    \item Received financial support from Microsoft Research India. \hfill {\em 2022}
+    \\ {\em To attend Academic conference.}
+    \item Recipient of financial support from IARCS-ACM India. \hfill {\em 2022}
+    \\ {\em Respectfully declined.} 
+    \item Ranked 23 in Joint Entrance Screening Test(JEST). \hfill {\em 2018}
+    \item Ranked 1179 in Graduate Aptitude Test in Engineering (GATE).  \hfill {\em 2017} 
+    \\ {\em Among 1,00,000 candidates.}
+    \item Presented Undergraduate project at University level Science and Technology Conference. \hfill {\em 2017}
+    \item Academic Excellence Award. \hfill {\em 2014} 
+    \\ {\em KCC ITM, Greater Noida}
+\end{rSection}
+
+\vspace{1em}
+
+%-------------------------------------------
+%     TEACHING EXPERIENCE
+%-------------------------------------------
+\begin{rSection}{Teaching Experience}
+  \item \textbf{Tutor in CSE, IIT Kanpur}
+  \begin{itemize}
+    \item Introduction to Computing \hfill {\em Mar 2022}
+    \item Data Structures and Algorithms \hfill {\em Jul 2019}
+  \end{itemize}
+  
+  \item \textbf{Teaching Assistant in CSE, IIT Kanpur}
+  \begin{itemize}
+    \item Computational Complexity \hfill {\em Jul 2021}
+    \item Modern Cryptology \hfill {\em Jan 2021} 
+    \item Mathematics for Computer Science \hfill {\em Jul 2020}
+    \item Data Structures and Algorithms \hfill {\em Dec 2018} 
+    \item Introduction to Computing \hfill {\em Jul 2018}
+  
+  \end{itemize}
+  
+  \item \textbf{Teaching Assistant in Massive Online Courses}
+  \begin{itemize}
+    \item Introduction to Cryptography \hfill {\em Jan 2022}
+    \\ {\em eMasters, IIT Kanpur}
+    \item Randomized methods in Computational Complexity \hfill {\em Jan 2021}
+    \\ {\em NPTEL}
+    \item Arithmetic Circuit Complexity \hfill {\em Jan 2020}
+    \\ {\em NPTEL}
+    \item Modern Algebra \hfill {\em July 2019}
+    \\ {\em NPTEL}
+  
+  \end{itemize}
+  
+\end{rSection}
+  
+  \vspace{1em}
+
+%-------------------------------------------
+%     PERSONAL DETAILS
+%-------------------------------------------
+\begin{rSection}{Personal Details}
+
+  \item Name \hfill Prateek Dwivedi (\texthindi{प्रतीक द्विवेदी})
+  \item Gender and Pronouns \hfill Male and He/Him.
+  \item \begin{minipage}[t]{0.4\linewidth} Permanent Address \end{minipage} \hfill \begin{minipage}[t]{0.50\linewidth}
+    \begin{flushright}
+      A106, Bulland Heights, Crossings Republik\\ Ghaziabad (U.P) - 201016\\ INDIA
+    \end{flushright}
+  \end{minipage}
+  \item Date and place of birth \hfill 21\textsuperscript{st} Feb 1996, Lucknow, India
+  \item Nationality \hfill Indian (\texthindi{भारतीय})
+  
+\end{rSection}
+
+% \begin{rSection}{Projects}
+% {\textbf{Course Project:} \emph{Rediscovering Randomized Median Finding Algorithm}} \hfill {\em IIT Kanpur}
+% \\ Prof. Surender Baswana \hfill {\em Sept 2018--Nov 2018}
+% \vspace{3pt}
+% \\ In this project we tried to re-design median finding algorithm with the optimal number of comparisons on expectation using elementary probability tools and techniques. Fundamental observations about the problem were made that gave a suitable choice of parameters which lead us to the expected result. The results from the implementation of the resulting algorithm turn out to be very close to the results in the original paper. 
+
+% {\textbf{Undergraduate Project:} \textit{Program Execution Tracer}} \hfill {\em KCC ITM}
+% \\ Prof. Mandeep Kaur \hfill {\em Sept 2016--May 2017}
+% \vspace{3pt}
+% \\ The aims was to present a system for facilitating novice programmers with an illustrative program execution tracer. Such a system, when provided with a syntactically and semantically correct function, aims to record the execution of each line. The recorded data can then be used to create a dynamic execution controller, with source code on one side and the state of intermediate result and output on the other side.
+
+
+% {\textbf{3rd year individual project:} \textit{Blood Pressure logging and curating application}} \hfill {\em KCC ITM}
+% \\ Prof. Divyanshu Sinha \hfill {\em Jun 2015}
+% \vspace{3pt}
+% \\ The goal of this project was to design a mobile application which helps its user in keeping track of their Blood Pressure and provide them with a succinct report of its trends on various time frames. These reports could be shared via different messaging clients. The application would alert emergency contacts when it notices the numbers crossings the safe range. 
+
+% \end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+% \begin{rSection}{Technical Strengths}
+
+% \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+% Computer Languages \&  C/C++, Python, Bash \\
+% Software \& Tools \& \LaTeX, GIT, Octave \\
+% \end{tabular}
+
+% \end{rSection}
+
+\end{document}
