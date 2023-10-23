@@ -26,7 +26,7 @@
 
 \usepackage{etoolbox,refcount}
 \usepackage{multicol}
-
+\usepackage[colorlinks]{hyperref}
 \usepackage{etoolbox,refcount}
 \usepackage{multicol}
 \usepackage{xcolor}
@@ -35,11 +35,16 @@
 \usepackage{polyglossia}
 
 \setmainlanguage{english}
-% \setotherlanguages{hindi} %% or other languages
+\setotherlanguages{hindi} %% or other languages
+\newfontfamily\devanagarifont[Script=Devanagari]{Lohit-Devanagari.ttf}
 
-% \newfontfamily\devanagarifont[Script=Devanagari]{Noto Sans Devanagari Regular}
+\definecolor{highlight}{HTML}{00008B}
 
-\definecolor{highlight}{HTML}{B40404}
+\hypersetup{
+  linkcolor=[rgb]{0.3,0.3,0.6},
+  citecolor=[rgb]{0.2, 0.6, 0.2},
+  urlcolor=[rgb]{0.6, 0.2, 0.2}
+}
 
 \newcounter{countitems}
 \newcounter{nextitemizecount}
@@ -71,12 +76,20 @@
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \name{Prateek Dwivedi} % Your name
-%\altname{\hindi{प्रतीक द्विवेदी}}
-\address{KD213, Indian Institute of Technology, Kanpur} % Your address
+\altname{\LARGE\begin{hindi}{प्रतीक द्विवेदी}\end{hindi}}
+\address{KD213, Indian Institute of Technology Kanpur} % Your address
 %\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
-\address{+91 8800 291 032 \\ pdwivedi@gmail.com} % Your phone number and email
+\address{pdwivedi@cse.iitk.ac.in \\ \href{https://www.prateekdwivedi.in/}{prateekdwivedi.in}} % Your phone number and email
 
 \begin{document}
+
+%----------------------------------------------------------------------------------------
+%	Research Interest
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Research Interests}
+  Broadly I am interested in the Theoretical Aspects of Computer Science. Specifically, my interest lies in Algebraic and Computational Complexity Theory. 
+\end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -87,42 +100,34 @@
 {\bf Indian Institute of Technology Kanpur} \hfill {\em Kanpur, India} 
 \\ {Doctor of Philosophy} \hfill {\em 2018 - Ongoing}
 \\ Computer Science \& Engineering
-\\ Advisor: Prof Nitin Saxena
+\\ Advisor: \href{https://cse.iitk.ac.in/users/nitin/}{Prof Nitin Saxena}
 
-{\bf KCC Institute of Technology and Management} \hfill {\em Gr. Noida, India} 
+{\bf KCC Institute of Technology and Management} \hfill {\em Gautam Buddha Nagar, India} 
 \\ Bachelor of Technologies\hfill {\em 2013 - 2017}
 \\ Computer Science \& Engineering
 
 
 \end{rSection}
 
-%----------------------------------------------------------------------------------------
-%	Research Interest
-%----------------------------------------------------------------------------------------
 
-\begin{rSection}{Research Interests}
-  Broadly I am interested in the Theoretical Aspects of Computer Science. Specifically, my interest lies in Algebraic Complexity Theory. Problems in Algorithms and Cryptography intrigues me as well. 
-\end{rSection}
-
-\vspace{1em}
 %-------------------------------------------
 %     PUBLICATIONS
 %-------------------------------------------
 
 \begin{rSection}{Publications}
-    \item {\bf Lower Bounds for the Sum of Small-Size Algebraic Branching Programs.}\hfill \emph{2023} \\
+    \item {\bf \href{https://www.prateekdwivedi.in/papers/smABP-lowerbounds-confversion.pdf}{Lower Bounds for the Sum of Small-Size Algebraic Branching Programs.}}\hfill \emph{2023} \\
     {\em with with C.S. Bhargav and Nitin Saxena}\\
     {\em Under review.}
 
-    \item {\bf Demystifying the border of depth-3 algebraic circuits.} \hfill \emph{2021} \\
+    \item {\bf \href{https://www.prateekdwivedi.in/papers/border-depth3-fullversion.pdf}{Demystifying the border of depth-3 algebraic circuits.}} \hfill \emph{2021} \\
     {\em with Pranjal Dutta and Nitin Saxena.}\\
-    {\em 62nd Annual Symposium on Foundations of Computer Science (FOCS)} \\
+    {\em 62nd Annual Symposium on Foundations of Computer Science (FOCS)  } \\
     {\em\color{highlight}Invited in the special issue of SIAM Journal on Computing (SICOMP) }
     
-    \item {\bf Deterministic identity testing paradigms for bounded top-fanin depth-4 circuits} \hfill \emph{2021} \\
+    \item {\bf \href{https://www.prateekdwivedi.in/papers/pit-depth4-didi-fullversion.pdf}{Deterministic identity testing paradigms for bounded top-fanin depth-4 circuits}} \hfill \emph{2021} \\
     {\em with Pranjal Dutta and Nitin Saxena.}\\
     {\em 36th Computational Complexity Conference (CCC)}\\
-    {\em The full version is currently under review in SIAM Journal on Computing (SICOMP)}
+    {\em The full version is currently under review in Theory of Computing (ToC)}
     
 \end{rSection}
 
@@ -218,32 +223,28 @@
 %     TEACHING EXPERIENCE
 %-------------------------------------------
 \begin{rSection}{Teaching Experience}
-  \item \textbf{Tutor in CSE, IIT Kanpur}
+  \item \textbf{Tutor at CSE, IIT Kanpur}
   \begin{itemize}
-    \item Introduction to Computing \hfill {\em Mar 2022}
-    \item Data Structures and Algorithms \hfill {\em Jul 2019}
+    \item Introduction to Computing \hfill {\em 2022}
+    \item Data Structures and Algorithms \hfill {\em 2019}
   \end{itemize}
   
-  \item \textbf{Teaching Assistant in CSE, IIT Kanpur}
+  \item \textbf{Teaching Assistant at CSE, IIT Kanpur}
   \begin{itemize}
-    \item Computational Complexity \hfill {\em Jul 2021}
-    \item Modern Cryptology \hfill {\em Jan 2021} 
-    \item Mathematics for Computer Science \hfill {\em Jul 2020}
-    \item Data Structures and Algorithms \hfill {\em Dec 2018} 
-    \item Introduction to Computing \hfill {\em Jul 2018}
+    \item Computational Complexity \hfill {\em 2021}
+    \item Modern Cryptology \hfill {\em 2021} 
+    \item Mathematics for Computer Science \hfill {\em 2020}
+    \item Data Structures and Algorithms \hfill {\em 2018} 
+    \item Introduction to Computing \hfill {\em 2018}
   
   \end{itemize}
   
   \item \textbf{Teaching Assistant in Massive Online Courses}
   \begin{itemize}
-    \item Introduction to Cryptography \hfill {\em Jan 2022}
-    \\ {\em eMasters, IIT Kanpur}
-    \item Randomized methods in Computational Complexity \hfill {\em Jan 2021}
-    \\ {\em NPTEL}
-    \item Arithmetic Circuit Complexity \hfill {\em Jan 2020}
-    \\ {\em NPTEL}
-    \item Modern Algebra \hfill {\em July 2019}
-    \\ {\em NPTEL}
+    \item Introduction to Cryptography \(|\) eMasters, IIT Kanpur \hfill {\em 2022}
+    \item Randomized methods in Computational Complexity \(|\) NPTEL \hfill {\em 2021}
+    \item Arithmetic Circuit Complexity \(|\) NPTEL \hfill {\em 2020}
+    \item Modern Algebra \(|\) NPTEL \hfill {\em 2019}
   
   \end{itemize}
   
@@ -267,16 +268,16 @@
 %-------------------------------------------
 \begin{rSection}{Personal Details}
 
-  \item Name \hfill Prateek Dwivedi
+  \item Name \hfill Prateek Dwivedi (\begin{hindi}{प्रतीक द्विवेदी}\end{hindi})
   \item Gender and Pronouns \hfill Male and He/Him.
   \item \begin{minipage}[t]{0.4\linewidth} Permanent Address \end{minipage} \hfill \begin{minipage}[t]{0.50\linewidth}
     \begin{flushright}
-      A106, Bulland Heights, Crossings Republik\\ Ghaziabad (U.P) - 201016\\ INDIA
+      A106, Bulland Heights, Crossings Republik\\ Ghaziabad (U.P) - 201016, India
     \end{flushright}
   \end{minipage}
   \item Date and place of birth \hfill 21\textsuperscript{st} Feb 1996, Lucknow, India
-  \item Nationality \hfill Indian
-  
+  \item Nationality \hfill Indian (\begin{hindi}{भारतीय}\end{hindi})
+  \item Contact \hfill +91 8800 291 032 \(|\) +91 512 259 7123
 \end{rSection}
 
 % \begin{rSection}{Projects}
