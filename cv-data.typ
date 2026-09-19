@@ -1,5 +1,4 @@
-// Content baseline: main at 6630d80569504064bb21b0e5d4d3eeada4f922b6.
-// Entry order, wording, dates, and repetitions follow resume.tex.
+// CV content, including archived entries.
 // Absent `active` means true. Archived content is explicitly inactive.
 // Keep presentation settings in resume.typ; content may use semantic emphasis.
 #let cv = (
