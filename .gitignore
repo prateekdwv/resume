@@ -1,4 +1,6 @@
 # Credits: Gitignore. Which is a gigantic collection of useful .gitignore template
+/build/
+
 # Link: https://github.com/github/gitignore
 
 ## Core latex/pdflatex auxiliary files:
