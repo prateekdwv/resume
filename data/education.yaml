@@ -1,0 +1,22 @@
+title: Education
+kind: appointment
+entries:
+  - institution: Indian Institute of Technology Kanpur
+    location: Kanpur, India
+    role: Doctor of Philosophy
+    dates: "2018 - 2025"
+    department: Computer Science and Engineering
+    thesis:
+      label: "Thesis:"
+      title: Treading the Borders for Explicitness, Circuit Factoring, and Identity Testing
+      link-label: pdf
+      url: https://www.prateekdwivedi.in/papers/thesis.pdf
+    adviser:
+      label: "Adviser:"
+      name: Prof Nitin Saxena
+      url: https://cse.iitk.ac.in/users/nitin/
+  - institution: KCC Institute of Technology and Management
+    location: Gautam Buddha Nagar, India
+    role: Bachelor of Technology
+    dates: "2013 - 2017"
+    department: Computer Science and Engineering

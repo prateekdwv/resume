@@ -1,0 +1,12 @@
+title: Employment
+kind: appointment
+entries:
+  - institution: IT University of Copenhagen
+    location: Copenhagen, Denmark
+    role: Postdoctoral Researcher
+    dates: "2024 -"
+    department: Theoretical Computer Science Section
+    adviser:
+      label: "Adviser:"
+      name: Prof Nutan Limaye
+      url: https://www.itu.dk/~nuli/

@@ -1,0 +1,24 @@
+title: References
+kind: reference
+entries:
+  - name: Nitin Saxena
+    url: https://cse.iitk.ac.in/users/nitin/
+    role: Professor
+    institution: IIT Kanpur
+    email: nitin@cse.iitk.ac.in
+  - name: Nutan Limaye
+    url: https://www.itu.dk/~nuli/
+    role: Professor
+    institution: ITU Copenhagen
+    email: nuli@itu.dk
+  - name: Nikhil Balaji
+    url: https://sites.google.com/view/nikhilbalaji/home
+    role: Assistant Professor
+    institution: IIT Delhi
+    email: nbalaji@cse.iitd.ac.in
+  - active: false
+    name: Amit Kumar Sinhababu
+    url: https://www.cmi.ac.in/people/fac-profile.php?id=amitks
+    role: Assistant Professor
+    institution: CMI, Chennai
+    email: amitks@cmi.ac.in

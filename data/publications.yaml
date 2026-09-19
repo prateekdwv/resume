@@ -1,0 +1,49 @@
+title: Publications
+kind: publication
+entries:
+  - title: Lower Bounds in Algebraic Complexity via Symmetry and Homomorphism Polynomials
+    dates: "2025"
+    authors: with Benedikt Pago and Tim Seppelt
+    venue: Submitted, 2025
+  - title: On Closure Properties of Read-Once Oblivious Algebraic Branching Programs
+    url: https://arxiv.org/abs/2509.10725
+    dates: "2025"
+    authors: >-
+      with Robert Andrews, Jules Armand, Magnus Hansen, Nutan Limaye, Srikanth Srinivasan, and
+      Sébastien Tavenas
+    venue: 17th Innovations in Theoretical Computer Science (ITCS), 2026
+  - title: A primer on the closure of algebraic complexity classes under factoring
+    url: https://arxiv.org/abs/2506.19604
+    dates: "2025"
+    authors: with C. S. Bhargav and Nitin Saxena
+    venue: To appear in the proceedings of Recent Trends in Computer Algebra (RTCA), 2025
+  - title: Monotone bounded-depth complexity of homomorphism polynomials
+    url: https://arxiv.org/abs/2505.22894
+    dates: "2024"
+    authors: with C. S. Bhargav, Shiteng Chen, Radu Curticapean
+    venue: 50th International Symposium on Mathematical Foundations of Computer Science (MFCS), 2025
+  - title: >-
+      Learning the coefficients: A presentable version of border complexity and applications
+      to circuit factoring
+    url: https://www.prateekdwivedi.in/papers/PresentableVNP-confversion.pdf
+    dates: "2024"
+    authors: with C. S. Bhargav and Nitin Saxena
+    venue: 56th Annual ACM Symposium on Theory of Computing (STOC), 2024
+  - title: Lower bounds for the sum of small-size algebraic branching programs
+    url: https://www.prateekdwivedi.in/papers/smABP-lowerbounds-confversion.pdf
+    dates: "2024"
+    authors: with C. S. Bhargav and Nitin Saxena
+    venue: 19th Annual Conference of Theory and Applications of Models of Computation (TAMC), 2024
+    note: Invited in the special issue of Theoretical Computer Science (Theor. Comput. Sci.)
+  - title: Demystifying the border of depth-3 algebraic circuits
+    url: https://www.prateekdwivedi.in/papers/border-depth3-fullversion.pdf
+    dates: "2021"
+    authors: with Pranjal Dutta and Nitin Saxena
+    venue: 62nd Annual Symposium on Foundations of Computer Science (FOCS)
+    note: Invited in the special issue of SIAM Journal on Computing (SICOMP)
+  - title: Deterministic identity testing paradigms for bounded top-fanin depth-4 circuits
+    url: https://www.prateekdwivedi.in/papers/pit-depth4-didi-fullversion.pdf
+    dates: "2021"
+    authors: with Pranjal Dutta and Nitin Saxena
+    venue: 36th Computational Complexity Conference (CCC)
+    note: The full version is currently under review in Theory of Computing (ToC)

@@ -1,0 +1,40 @@
+title: Projects
+kind: project
+active: false
+entries:
+  - active: false
+    category: "Course Project:"
+    title: Rediscovering Randomized Median Finding Algorithm
+    institution: IIT Kanpur
+    adviser: Prof. Surender Baswana
+    dates: "Sept 2018–Nov 2018"
+    description: >-
+      In this project we tried to re-design median finding algorithm with the optimal number
+      of comparisons on expectation using elementary probability tools and techniques.
+      Fundamental observations about the problem were made that gave a suitable choice of
+      parameters which lead us to the expected result. The results from the implementation of
+      the resulting algorithm turn out to be very close to the results in the original paper.
+  - active: false
+    category: "Undergraduate Project:"
+    title: Program Execution Tracer
+    institution: KCC ITM
+    adviser: Prof. Mandeep Kaur
+    dates: "Sept 2016–May 2017"
+    description: >-
+      The aims was to present a system for facilitating novice programmers with an
+      illustrative program execution tracer. Such a system, when provided with a syntactically
+      and semantically correct function, aims to record the execution of each line. The
+      recorded data can then be used to create a dynamic execution controller, with source
+      code on one side and the state of intermediate result and output on the other side.
+  - active: false
+    category: "3rd year individual project:"
+    title: Blood Pressure logging and curating application
+    institution: KCC ITM
+    adviser: Prof. Divyanshu Sinha
+    dates: "Jun 2015"
+    description: >-
+      The goal of this project was to design a mobile application which helps its user in
+      keeping track of their Blood Pressure and provide them with a succinct report of its
+      trends on various time frames. These reports could be shared via different messaging
+      clients. The application would alert emergency contacts when it notices the numbers
+      crossings the safe range.

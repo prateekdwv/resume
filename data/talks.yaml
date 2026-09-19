@@ -1,0 +1,37 @@
+title: Academic Talks and Seminars
+kind: talk
+entries:
+  - title: Non-Closure properties in algebraic complexity
+    dates: "2025"
+    venue: IIT Delhi, India
+  - title: Monotone Bounded-Depth Complexity of Homomorphism Polynomials
+    dates: "2024"
+    venue: ARCO, Malmö University, Sweden
+  - title: Presentable Version of Border Complexity and Applications to Circuit Factoring
+    children:
+      - venue: Ulm University, Germany
+        dates: "2024"
+      - venue: Welcome talk at the Theory Group, ITU, and BARC, KU
+        dates: "2024"
+  - title: Treading the Border Complexity and Identity Testing Paradigms
+    dates: "2022"
+    venue: Thesis Defense, IIT Kanpur
+  - title: Deterministic identity testing paradigms for bounded top-fanin depth 4 circuits
+    dates: "2021"
+    venue: Invited Talk, CS Theory Seminar at Georgetown University
+  - title: Deterministic identity testing paradigms for bounded top-fanin depth-4 circuits
+    children:
+      - venue: Workshop on Algebra and Computation (WAC), Göteborg
+        dates: "2023"
+      - venue: 7th Workshop on Algebraic Complexity Theory (WACT), Warwick
+        dates: "2023"
+      - venue: CS Theory Seminar at Georgetown University
+        dates: "2021"
+      - venue: Conference Presentation, (CCC)
+        dates: "2021"
+  - title: Information-Theoretic And Algorithmic Thresholds For Group Testing
+    dates: "2020"
+    venue: PhD Comprehensive Evaluation, IIT Kanpur
+  - title: On Approximative Closure of Algebraic Complexity Classes
+    dates: "2019"
+    venue: SIGTACS, IIT Kanpur

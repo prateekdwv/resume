@@ -1,0 +1,15 @@
+title: Personal Details
+kind: detail
+entries:
+  - label: Name
+    value: Prateek Dwivedi (प्रतीक द्विवेदी)
+  - label: Gender and Pronouns
+    value: Male and He/Him.
+  - label: Permanent Address
+    value: A106, Bulland Heights, Crossings Republik Ghaziabad (U.P) - 201016, India
+  - label: Date and place of birth
+    value: 21st Feb 1996, Lucknow, India
+  - label: Nationality
+    value: Indian (भारतीय)
+  - label: Contact
+    value: "+91 8800 291 032 | +45 31 81 36 18"
