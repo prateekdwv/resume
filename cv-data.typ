@@ -3,6 +3,7 @@
   "research-interests",
   "employment",
   "education",
+  "languages",
   "publications",
   "talks",
   "courses",

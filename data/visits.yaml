@@ -1,10 +1,25 @@
 title: Short Term Visits
 kind: visit
 entries:
+  - title: Highlights of Algorithms (HALG 2026)
+    url: https://2026.highlightsofalgorithms.org/
+    dates: "08/06/2026 – 10/06/2026"
+    location: KTH Royal Institute of Technology, Stockholm, Sweden
+    description: >-
+      Talk and poster presentation.
+  - title: Bellairs Complexity Workshop
+    url: https://www.cs.mun.ca/~kol/bellairs2026.html
+    dates: "03/04/2026 – 10/04/2026"
+    location: Bellairs Research Institute of McGill University, Barbados
+  - title: University of Cambridge
+    dates: "26/03/2026 – 02/04/2026"
+    host: "Host: Prof Anuj Dawar"
   - title: 50th International Symposium on Mathematical Foundations of Computer Science (MFCS)
+    url: https://mfcs2025.mimuw.edu.pl/
     dates: "2025"
     location: Warsaw, Poland
   - title: 57th Annual ACM Symposium on Theory of Computing (STOC)
+    url: https://acm-stoc.org/stoc2025/
     dates: "2025"
     location: Prague, Czech Republic
   - title: Université Savoie Mont Blanc, France
@@ -17,35 +32,32 @@ entries:
     dates: "2024"
     host: "Host: Prof Thomas Thierauf"
   - title: Algorithmic Research-Cooperation around Oresund (ARCO)
+    url: https://mau.se/en/about-us/management-and-organisation/faculty-of-technology-and-society/department-of-computer-science-and-media-technology/arco/
     dates: "2024"
     location: Malmö University, Sweden
   - title: Summer of Counting and Algebraic Complexity
+    url: https://sites.google.com/view/count-alg-summer
     dates: "2023"
     location: IT University of Copenhagen (ITU) in Copenhagen, Denmark
+    host: "Host: Prof Radu Curticapean"
   - title: Workshop on Algebra and Computation (WAC)
+    url: https://sites.google.com/view/wac2023/home
     dates: "2023"
     location: Chalmers University of Technology, Göteborg
+    host: "Host: Prof Nutan Limaye"
   - title: 7th Workshop on Algebraic Complexity Theory (WACT)
+    url: https://www.dcs.warwick.ac.uk/~u2270030/wact/
     dates: "2023"
     location: The University of Warwick, UK
+    host: "Host: Prof Christian Ikenmeyer"
   - title: 2nd Swiss Winter School on Theoretical Computer Science
+    url: https://theory.epfl.ch/WinterSchool2023/
     dates: "2023"
     location: Jointly organized by EPFL and ETH Zurich in Zinal
   - title: Chennai Mathematical Institute (CMI)
     dates: "2022"
     host: "Host: Prof Partha Mukhopadhyay"
-  - title: 62nd Annual Symposium on Foundations of Computer Science (FOCS)
-    dates: "2022"
-    location: Denver, Colorado - Attended Virtually
-  - title: 36th Computational Complexity Conference (CCC), 2021.
-    dates: "2021"
-    location: Toronto, Ontario, Canada - Attended Virtually
-  - title: 48th International Colloquium on Automata, Languages, and Programming (ICALP)
-    dates: "2021"
-    location: Glasgow, Scotland - Attended Virtually
-  - title: 52nd ACM Symposium on Theory of Computing (STOC)
-    dates: "2020"
-    location: Chicago, US - Attended Virtually
   - title: Workshop on Algebraic Complexity Theory
+    url: https://www.icts.res.in/discussion-meeting/wact2019
     dates: "2019"
     location: ICTS, Bengaluru

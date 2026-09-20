@@ -5,11 +5,12 @@ entries:
     dates: "2025"
     description: Mentoring Thøger Bro and Emil Andreas Sondum Jointly with Prof Riko Jacob
   - title: Head Tutor at CSE, IIT Kanpur
-    description: Responsible for practical assignments, Lab Exam, and all the course-related logistical support
-    children:
-      - title: Data Structures and Algorithms
-        dates: "2024"
+    dates: "2024"
+    description: >-
+      Responsible for practical assignments, Lab Exam, and all the course-related
+      logistical support for Data Structures and Algorithms course
   - title: Mathematics for Computer Science, IIT Kanpur
+    dates: "2024"
     description: Adhyayan 2023, Summer School. Jointly with C. S. Bhargav
   - title: Tutor at CSE, IIT Kanpur
     children:

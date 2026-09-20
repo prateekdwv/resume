@@ -1,11 +1,21 @@
 title: Employment
 kind: appointment
 entries:
+  - institution: Universität des Saarlandes and Université Savoie Mont Blanc
+    location: Germany and France
+    role: DAAD PRIME Fellow
+    dates: "09/2026 – Current"
+    adviser:
+      label: "Hosts:"
+      name: Prof Markus Bläser and Dr Sébastien Tavenas
   - institution: IT University of Copenhagen
+    url: https://pure.itu.dk/en/organisations/theoretical-computer-science
     location: Copenhagen, Denmark
     role: Postdoctoral Researcher
-    dates: "2024 -"
+    dates: "08/2024 – 08/2026"
     department: Theoretical Computer Science Section
+    email: prdw@itu.dk
+    sector: Education
     adviser:
       label: "Adviser:"
       name: Prof Nutan Limaye

@@ -9,16 +9,15 @@ entries:
   - name: Nutan Limaye
     url: https://www.itu.dk/~nuli/
     role: Professor
-    institution: ITU Copenhagen
+    institution: IT University of Copenhagen, Denmark
     email: nuli@itu.dk
-  - name: Nikhil Balaji
-    url: https://sites.google.com/view/nikhilbalaji/home
-    role: Assistant Professor
-    institution: IIT Delhi
-    email: nbalaji@cse.iitd.ac.in
-  - active: false
-    name: Amit Kumar Sinhababu
-    url: https://www.cmi.ac.in/people/fac-profile.php?id=amitks
-    role: Assistant Professor
-    institution: CMI, Chennai
-    email: amitks@cmi.ac.in
+  - name: Markus Bläser
+    url: https://cc.cs.uni-saarland.de/mblaeser/
+    role: Professor
+    institution: Universität des Saarlandes, Saarbrücken, Germany
+    email: mblaeser@cs.uni-saarland.de
+  - name: Sébastien Tavenas
+    url: https://tavenas.pages.math.cnrs.fr/
+    role: CNRS Research Scientist (Chargé de recherche)
+    institution: LAMA, Université Savoie Mont Blanc, France
+    email: sebastien.tavenas@univ-smb.fr
