@@ -2,6 +2,8 @@ title: Research Interests
 kind: prose
 entries:
   - description: >-
-      My research focuses on the theoretical foundations of computer science,
-      with particular emphasis on Algebraic Complexity Theory and
-      Computational Complexity.
+      My research focuses on algebraic complexity theory, drawing on tools from
+      algebra, algebraic geometry, and symmetry. I study polynomial identity
+      testing, arithmetic circuit lower bounds, algebraic
+      communication complexity, and the behaviour of algebraic
+      complexity classes under limits and factorisation.

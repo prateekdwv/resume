@@ -127,8 +127,13 @@ A new section kind needs a corresponding renderer. The reusable template accepts
 The application order is research interests, appointments, education, fellowships
 and research support, publications, teaching and mentoring, talks, short term
 visits, academic service, and references. The thesis appears within
-education. The publication list contains all nine research works, with submission
-and acceptance status retained. Supplementary publication links and publisher
+education and in the publication section's combined thesis/survey category.
+Publication records have an explicit `category`: `published`, `preprint`, or
+`thesis-survey`. The `groups` list in `data/publications.yaml` controls their
+headings and order. Each group is reverse chronological, with continuous numbering
+across groups: seven published/accepted papers, one submitted manuscript, and two
+thesis/survey records. Submission and acceptance status are retained.
+Supplementary publication links and publisher
 fields are displayed only in the master build.
 
 The application omits personal particulars, personal email and phones, language
@@ -161,12 +166,12 @@ between rows. Names and emails remain clickable; roles and affiliations wrap nat
 
 ## Content notes for future review
 
-- PhD completion is **2024**, confirmed by the author. The thesis record retains
-  its separate **2025** publication/deposit year and is printed in the master only.
-- The mathematics summer-school entry is dated **2024**, but its description says
-  **Adhyayan 2023**. Both original values are retained pending confirmation.
-- The **Thesis Defense** talk took place in **March 2025**, confirmed by the author.
-  The separately confirmed PhD completion year remains 2024.
+- The PhD research period is **2018–2024**. The thesis was submitted in **2024**
+  and defended in **March 2025**, confirmed by the author; Education explicitly
+  distinguishes these milestones. The master publication list retains the thesis's
+  separate **2025** record. The defence talk also remains dated **March 2025**.
+- The Adhyayan summer-school teaching took place in **2023**, confirmed by the
+  author. Both its date and description now consistently show 2023.
 - Talk months are recorded when confirmed by the author or supported by dated
   event announcements or programmes; source URLs for online verification are
   comments beside the dates in `data/talks.yaml`.

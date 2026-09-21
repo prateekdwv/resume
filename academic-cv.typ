@@ -79,6 +79,10 @@
     if "department" in entry { detail.push(entry.department) }
     if "thesis" in entry {
       detail.push([Thesis: #emph(linked(entry.thesis.title, entry.thesis))])
+      let milestones = entry.thesis.at("milestones", default: ())
+      if milestones.len() > 0 {
+        detail.push(milestones.map(item => [#item.label: #item.date]).join([ · ]))
+      }
     }
     if "adviser" in entry {
       let adviser = entry.adviser
@@ -273,10 +277,23 @@
       heading(level: 1, title)
       if section.kind == "reference" {
         references(entries)
+      } else if section.kind == "publication" {
+        let number = 0
+        for group in section.groups {
+          let records = entries.filter(entry => entry.category == group.id)
+          if records.len() > 0 {
+            block(above: 0pt, below: 0pt, inset: (bottom: title-gap), sticky: true)[
+              #text(size: 11pt, weight: "bold", group.title)
+            ]
+            for entry in records {
+              number += 1
+              publication(entry, number)
+            }
+          }
+        }
       } else {
         for (index, entry) in entries.enumerate() {
           if section.kind == "appointment" { appointment(entry) }
-          else if section.kind == "publication" { publication(entry, index + 1) }
           else if section.kind == "talk" { talk-group(entry) }
           else { generic-entry(section.kind, entry) }
         }

@@ -6,11 +6,17 @@ entries:
     location: Kanpur, India
     role: Doctor of Philosophy
     dates: "2018 – 2024"
+    # Research period; thesis submission and defence are recorded separately below.
     department: Computer Science and Engineering
     # qualification-level: EQF level 8
     thesis:
       title: Treading the Borders for Explicitness, Circuit Factoring, and Identity Testing
       url: https://www.prateekdwivedi.in/papers/thesis.pdf
+      milestones:
+        - label: Thesis submitted
+          date: "August 2024"
+        - label: Defended
+          date: March 2025
     adviser:
       name: Prof Nitin Saxena
       url: https://cse.iitk.ac.in/users/nitin/
