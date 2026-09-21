@@ -1,0 +1,48 @@
+title: Teaching and Mentoring Experience
+application-title: Teaching and Mentoring
+kind: teaching
+entries:
+  - title: Undergraduate Project, ITU Copenhagen
+    dates: "2025"
+    description: "Project topic: Edit distance algorithms"
+    descriptions:
+      - Mentoring Thøger Bro and Emil Andreas Sondum jointly with Prof Riko Jacob
+  - title: Head Tutor at CSE, IIT Kanpur
+    dates: "2024"
+    description: >-
+      Responsible for practical assignments, Lab Exam, and all the course-related
+      logistical support for Data Structures and Algorithms course
+  - title: Mathematics for Computer Science, IIT Kanpur
+    dates: "2023"
+    description: Course instructor, Adhyayan 2023 Summer School, jointly with C. S. Bhargav
+  - title: Tutor and Teaching Assistant at CSE, IIT Kanpur
+    children:
+      - dates: "2022"
+        courses: [Introduction to Computing]
+        role: Tutor
+      - dates: "2021"
+        courses: [Computational Complexity, Modern Cryptology]
+        role: Teaching Assistant
+      - dates: "2020"
+        courses: [Mathematics for Computer Science]
+        role: Teaching Assistant
+      - dates: "2019"
+        courses: [Data Structures and Algorithms]
+        role: Tutor
+      - dates: "2018"
+        courses: [Data Structures and Algorithms, Introduction to Computing]
+        role: Teaching Assistant
+  - title: Teaching Assistant in Massive Online Courses
+    children:
+      - title: Introduction to Cryptography
+        platform: eMasters, IIT Kanpur
+        dates: "2022"
+      - title: Randomized methods in Computational Complexity
+        platform: NPTEL
+        dates: "2021"
+      - title: Arithmetic Circuit Complexity
+        platform: NPTEL
+        dates: "2020"
+      - title: Modern Algebra
+        platform: NPTEL
+        dates: "2019"

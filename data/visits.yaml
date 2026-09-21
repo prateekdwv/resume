@@ -1,0 +1,74 @@
+title: Research Visits
+kind: visit
+entries:
+  - title: Highlights of Algorithms (HALG 2026)
+    url: https://2026.highlightsofalgorithms.org/
+    # Event dates: 8–10 June 2026 (linked programme).
+    dates: "Jun 2026"
+    location: KTH Royal Institute of Technology, Stockholm, Sweden
+  - title: Bellairs Complexity Workshop
+    url: https://www.cs.mun.ca/~kol/bellairs2026.html
+    # Previously recorded visit dates: 3–10 April 2026.
+    dates: "Apr 2026"
+    location: Bellairs Research Institute of McGill University, Barbados
+  - title: University of Cambridge
+    # Previously recorded visit dates: 26 March–2 April 2026.
+    dates: "Mar 2026"
+    host: "Host: Prof Anuj Dawar"
+  - title: 50th International Symposium on Mathematical Foundations of Computer Science (MFCS)
+    url: https://mfcs2025.mimuw.edu.pl/
+    # 25–29 August: https://easychair.org/cfp/MFCS2025
+    dates: "Aug 2025"
+    location: Warsaw, Poland
+  - title: 57th Annual ACM Symposium on Theory of Computing (STOC)
+    url: https://acm-stoc.org/stoc2025/
+    # Event dates: 23–27 June 2025 (linked conference website).
+    dates: "Jun 2025"
+    location: Prague, Czech Republic
+  - title: Université Savoie Mont Blanc, France
+    dates: "2025"
+    host: "Host: Prof. Sébastien Tavenas"
+  - title: Tata Institute of Fundamental Research (TIFR), Mumbai
+    dates: "2025"
+    host: "Host: Prof Mrinal Kumar"
+  - title: Algorithmic Research-Cooperation around Oresund (ARCO)
+    url: https://mau.se/en/about-us/management-and-organisation/faculty-of-technology-and-society/department-of-computer-science-and-media-technology/arco/
+    # 32nd ARCO: 22 November 2024 (linked programme).
+    dates: "Nov 2024"
+    location: Malmö University, Sweden
+  - title: Ulm University, Germany
+    # Month of the Ulm talk confirmed by the author.
+    dates: "Sep 2024"
+    host: "Host: Prof Thomas Thierauf"
+  - title: Summer of Counting and Algebraic Complexity
+    url: https://sites.google.com/view/count-alg-summer
+    # Personal visit month confirmed by the author.
+    dates: "Aug 2023"
+    location: IT University of Copenhagen (ITU) in Copenhagen, Denmark
+    host: "Host: Prof Radu Curticapean"
+  - title: Workshop on Algebra and Computation (WAC)
+    url: https://sites.google.com/view/wac2023/home
+    # Event dates: 14–16 August 2023 (linked workshop website).
+    dates: "Aug 2023"
+    location: Chalmers University of Technology, Göteborg
+    host: "Host: Prof Nutan Limaye"
+  - title: 7th Workshop on Algebraic Complexity Theory (WACT)
+    url: https://www.dcs.warwick.ac.uk/~u2270030/wact/
+    # Event dates: 27–31 March 2023 (linked workshop website).
+    dates: "Mar 2023"
+    location: The University of Warwick, UK
+    host: "Host: Prof Christian Ikenmeyer"
+  - title: 2nd Swiss Winter School on Theoretical Computer Science
+    url: https://theory.epfl.ch/WinterSchool2023/
+    # Event dates: 29 January–3 February 2023 (linked school website).
+    dates: "Jan 2023"
+    location: Jointly organized by EPFL and ETH Zurich in Zinal
+  - title: Chennai Mathematical Institute (CMI)
+    # Author confirms visit coincided with FSTTCS, 18–20 December: https://www.fsttcs.org.in/archives/2022/
+    dates: "Dec 2022"
+    host: "Host: Prof Partha Mukhopadhyay"
+  - title: Workshop on Algebraic Complexity Theory
+    url: https://www.icts.res.in/discussion-meeting/wact2019
+    # Event dates: 25–29 March 2019 (linked ICTS announcement).
+    dates: "Mar 2019"
+    location: ICTS, Bengaluru

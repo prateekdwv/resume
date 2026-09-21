@@ -1,0 +1,31 @@
+title: Education
+kind: appointment
+entries:
+  - institution: Indian Institute of Technology Kanpur
+    url: https://cse.iitk.ac.in/
+    location: Kanpur, India
+    role: Doctor of Philosophy
+    dates: "2018 – 2025"
+    # PhD period through defence; submission and defence dates are recorded below.
+    department: Computer Science and Engineering
+    # qualification-level: EQF level 8
+    thesis:
+      # Full title and link are listed in publications.yaml under Thesis and survey.
+      milestones:
+        - label: Thesis submitted
+          date: "August 2024"
+        - label: Defended
+          date: March 2025
+    adviser:
+      name: Prof Nitin Saxena
+      url: https://cse.iitk.ac.in/users/nitin/
+  # - institution: Self
+  #   location: Delhi, India
+  #   role: Independent preparation for national PhD entrance examinations
+  #   dates: "2017 – 2018"
+  - institution: KCC Institute of Technology and Management
+    location: Gautam Buddha Nagar, India
+    role: Bachelor of Technology
+    dates: "2013 - 2017"
+    department: Computer Science and Engineering
+    # qualification-level: EQF level 6

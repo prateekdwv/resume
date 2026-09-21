@@ -1,0 +1,23 @@
+title: Relevant Courses
+kind: course
+active: false
+application: false
+entries:
+  - active: false
+    title: Arithmetic Circuit Complexity
+  - active: false
+    title: Computational Number Theory & Algebra
+  - active: false
+    title: Randomized methods in Computational Complexity
+  - active: false
+    title: Design and Analysis of Algorithms
+  - active: false
+    title: Randomized Algorithms
+  - active: false
+    title: Data Structures
+  - active: false
+    title: Discrete Mathematics and Graph Theory
+  - active: false
+    title: Numerical and Statistical Techniques
+  - active: false
+    title: Theory of Computation.

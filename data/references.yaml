@@ -1,0 +1,23 @@
+title: Referees
+kind: reference
+entries:
+  - name: Nitin Saxena
+    url: https://cse.iitk.ac.in/users/nitin/
+    role: Professor
+    institution: IIT Kanpur
+    email: nitin@cse.iitk.ac.in
+  - name: Nutan Limaye
+    url: https://www.itu.dk/~nuli/
+    role: Professor
+    institution: IT University of Copenhagen, Denmark
+    email: nuli@itu.dk
+  - name: Markus Bläser
+    url: https://cc.cs.uni-saarland.de/mblaeser/
+    role: Professor
+    institution: Universität des Saarlandes, Saarbrücken, Germany
+    email: mblaeser@cs.uni-saarland.de
+  - name: Sébastien Tavenas
+    url: https://tavenas.pages.math.cnrs.fr/
+    role: CNRS Research Scientist (Chargé de recherche)
+    institution: LAMA, Université Savoie Mont Blanc, France
+    email: sebastien.tavenas@univ-smb.fr
