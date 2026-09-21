@@ -43,10 +43,18 @@
   set par(justify: false, leading: 0.65em, spacing: 0.4em)
   set list(indent: 3mm, body-indent: 2mm, spacing: 2pt)
   set heading(numbering: none, outlined: true)
-  show heading: it => block(above: 16pt, below: 0pt, inset: (bottom: 10pt), sticky: true)[
+  show heading: it => block(above: 16pt, below: 0pt, inset: (bottom: 12pt), sticky: true)[
     #text(size: 12pt, weight: "bold", it.body)
   ]
   show link: set text(fill: link-color)
+
+  // Category labels share one style and follow each section's content column.
+  let subheading(title, label-width: date-width, first: true) = {
+    block(above: if first { 0pt } else { 14pt }, below: 0pt, inset: (bottom: 8pt), sticky: true)[
+      #grid(columns: (label-width, 1fr), column-gutter: gutter,
+        [], text(size: 11pt, fill: muted, weight: "bold", title))
+    ]
+  }
 
   // Each row can paginate if its body grows; short records stay together.
   let row(label, content, label-width: date-width, bottom: entry-gap) = context layout(size => {
@@ -66,8 +74,10 @@
   let children(entry) = {
     let nested = entry.at("children", default: ()).filter(visible)
     for (index, child) in nested.enumerate() {
-      let label = child.at("title", default: child.at("venue", default: ""))
-      let content = [#linked(label, child)#if "platform" in child { [ · #child.platform] }#supplementary(child)]
+      let label = if "courses" in child { child.courses.join(", ") } else {
+        child.at("title", default: child.at("venue", default: ""))
+      }
+      let content = [#linked(label, child)#if "role" in child { [ (#child.role)] }#if "platform" in child { [ · #child.platform] }#supplementary(child)]
       row(child.at("dates", default: ""), content,
         bottom: if index == nested.len() - 1 { group-gap } else { row-gap })
       children(child)
@@ -78,7 +88,9 @@
     let detail = (strong(entry.role), linked(entry.institution, entry) + [ · #entry.location])
     if "department" in entry { detail.push(entry.department) }
     if "thesis" in entry {
-      detail.push([Thesis: #emph(linked(entry.thesis.title, entry.thesis))])
+      if "title" in entry.thesis {
+        detail.push([Thesis: #emph(linked(entry.thesis.title, entry.thesis))])
+      }
       let milestones = entry.thesis.at("milestones", default: ())
       if milestones.len() > 0 {
         detail.push(milestones.map(item => [#item.label: #item.date]).join([ · ]))
@@ -101,13 +113,17 @@
     let venue = if include-inactive { entry.venue } else { entry.at("application-venue", default: entry.venue) }
     let year-shown = venue.contains(entry.dates) or venue.contains("’" + entry.dates.slice(2)) or entry.at("note", default: "").contains(entry.dates)
     let detail = (
-      strong(linked(entry.title, entry)),
       entry.authors,
       [#emph(venue)#if not year-shown { [ · #entry.dates] }],
     )
     if "note" in entry { detail.push(entry.note) }
     if include-inactive and "publisher" in entry { detail.push([Publisher: #entry.publisher]) }
-    row([\[#number\]], [#lines(detail)#supplementary(entry)], label-width: 9mm)
+    row([\[#number\]], [
+      #strong(linked(entry.title, entry))
+      #linebreak()
+      #v(3pt)
+      #lines(detail)#supplementary(entry)
+    ], label-width: 9mm)
   }
 
   let reference(entry) = {
@@ -131,7 +147,7 @@
     }
   }
 
-  let generic-entry(kind, entry) = {
+  let generic-entry(kind, entry, first: true) = {
     if kind == "prose" {
       block(above: 0pt, below: 4pt)[#entry.description#supplementary(entry)]
     } else if kind == "detail" {
@@ -151,12 +167,7 @@
     } else if kind == "contribution" {
       let activities = chronological(entry.at("activities", default: ()).filter(visible))
       let reviewing = entry.at("reviewing", default: ()).filter(visible).sorted(key: item => -item.year)
-      let label = text(size: 10pt, fill: muted, emph(entry.title))
-      block(above: 0pt, below: 0pt, inset: (bottom: 4pt), sticky: true)[
-        #if activities.len() > 0 or reviewing.len() > 0 {
-          grid(columns: (date-width, 1fr), column-gutter: gutter, [], label)
-        } else { label }
-      ]
+      subheading(entry.title, first: first)
       for (index, activity) in activities.enumerate() {
         let details = (strong(linked(activity.title, activity)),)
         let metadata = ()
@@ -282,9 +293,7 @@
         for group in section.groups {
           let records = entries.filter(entry => entry.category == group.id)
           if records.len() > 0 {
-            block(above: 0pt, below: 0pt, inset: (bottom: title-gap), sticky: true)[
-              #text(size: 11pt, weight: "bold", group.title)
-            ]
+            subheading(group.title, label-width: 9mm, first: number == 0)
             for entry in records {
               number += 1
               publication(entry, number)
@@ -295,7 +304,7 @@
         for (index, entry) in entries.enumerate() {
           if section.kind == "appointment" { appointment(entry) }
           else if section.kind == "talk" { talk-group(entry) }
-          else { generic-entry(section.kind, entry) }
+          else { generic-entry(section.kind, entry, first: index == 0) }
         }
       }
     }

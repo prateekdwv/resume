@@ -1,5 +1,4 @@
-title: Short Term Visits
-application-title: Short Term Visits
+title: Research Visits
 kind: visit
 entries:
   - title: Highlights of Algorithms (HALG 2026)
@@ -7,8 +6,6 @@ entries:
     # Event dates: 8–10 June 2026 (linked programme).
     dates: "Jun 2026"
     location: KTH Royal Institute of Technology, Stockholm, Sweden
-    description: >-
-      Talk and poster presentation.
   - title: Bellairs Complexity Workshop
     url: https://www.cs.mun.ca/~kol/bellairs2026.html
     # Previously recorded visit dates: 3–10 April 2026.

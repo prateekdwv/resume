@@ -13,24 +13,23 @@ entries:
   - title: Mathematics for Computer Science, IIT Kanpur
     dates: "2023"
     description: Adhyayan 2023, Summer School. Jointly with C. S. Bhargav
-  - title: Tutor at CSE, IIT Kanpur
+  - title: Tutor and Teaching Assistant at CSE, IIT Kanpur
     children:
-      - title: Introduction to Computing
-        dates: "2022"
-      - title: Data Structures and Algorithms
-        dates: "2019"
-  - title: Teaching Assistant at CSE, IIT Kanpur
-    children:
-      - title: Computational Complexity
-        dates: "2021"
-      - title: Modern Cryptology
-        dates: "2021"
-      - title: Mathematics for Computer Science
-        dates: "2020"
-      - title: Data Structures and Algorithms
-        dates: "2018"
-      - title: Introduction to Computing
-        dates: "2018"
+      - dates: "2022"
+        courses: [Introduction to Computing]
+        role: Tutor
+      - dates: "2021"
+        courses: [Computational Complexity, Modern Cryptology]
+        role: Teaching Assistant
+      - dates: "2020"
+        courses: [Mathematics for Computer Science]
+        role: Teaching Assistant
+      - dates: "2019"
+        courses: [Data Structures and Algorithms]
+        role: Tutor
+      - dates: "2018"
+        courses: [Data Structures and Algorithms, Introduction to Computing]
+        role: Teaching Assistant
   - title: Teaching Assistant in Massive Online Courses
     children:
       - title: Introduction to Cryptography

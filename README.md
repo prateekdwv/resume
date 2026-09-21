@@ -124,10 +124,11 @@ A new section kind needs a corresponding renderer. The reusable template accepts
 
 ## Application selection and layout
 
-The application order is research interests, appointments, education, fellowships
-and research support, publications, teaching and mentoring, talks, short term
-visits, academic service, and references. The thesis appears within
-education and in the publication section's combined thesis/survey category.
+The application order is research interests, appointments, education, publications,
+fellowships and research support, teaching and mentoring, talks, short term
+visits, academic service, and references. Education lists thesis submission and
+defence dates; the full thesis title and link appear only in the publication
+section's combined thesis/survey category.
 Publication records have an explicit `category`: `published`, `preprint`, or
 `thesis-survey`. The `groups` list in `data/publications.yaml` controls their
 headings and order. Each group is reverse chronological, with continuous numbering
@@ -155,9 +156,9 @@ fixed page count or section-specific page breaks are used.
 Spacing is controlled by named values near the top of `academic-cv.typ`: 7 pt
 between related rows, 14 pt between ordinary entries, 18 pt between titled groups
 and 8 pt below group titles. Section headings have 16 pt above and
-10 pt of bottom padding. Paragraph leading stays at 0.65 em; extra space separates
-records rather than spreading out every line. The spacing revision was visually
-checked on all five application pages and all seven inclusive pages.
+12 pt of bottom padding. Paragraph leading stays at 0.65 em; extra space separates
+records rather than spreading out every line. Publication titles have an additional
+3 pt gap before their authors and venue details.
 
 References use two equal-width columns with a 12 mm gutter, in source order
 across each row. Each pair stays together across page breaks, with 10 pt between
@@ -165,6 +166,12 @@ rows and no trailing padding after the final row. Reviewing years have 2 pt
 between rows. Names and emails remain clickable; roles and affiliations wrap naturally.
 
 ## Content notes for future review
+
+Main section headings use 12 pt bold text at the page margin. Publication and
+Academic Service category labels share the `subheading` component: 11 pt bold,
+dark grey, aligned with the section's content column, with 8 pt below and kept
+with the first entry. Subsequent categories have an additional 14 pt above.
+Entry titles remain 11 pt bold.
 
 - The PhD research period is **2018–2024**. The thesis was submitted in **2024**
   and defended in **March 2025**, confirmed by the author; Education explicitly

@@ -1,5 +1,4 @@
-title: Academic Achievements
-application-title: Fellowships, Awards and Research Support
+title: Fellowships, Honours and Awards
 kind: achievement
 entries:
   - title: Awarded DAAD PRIME Fellowship
@@ -10,14 +9,14 @@ entries:
     url: https://marie-sklodowska-curie-actions.ec.europa.eu/funding/seal-of-excellence
     dates: "2026"
     description: Recognition of a high-quality Postdoctoral Fellowship proposal by the European Commission
-  - title: Invited to participate in Summer of Counting and Algebraic Complexity at ITU Copenhagen
+  - title: Full financial support — Summer of Counting and Algebraic Complexity
     url: https://sites.google.com/view/count-alg-summer
     dates: "2023"
-    description: Full financial support
-  - title: Selected to attend Swiss Winter School on Theoretical Computer Science
+    description: Invited participant, ITU Copenhagen
+  - title: Partial financial support — Swiss Winter School on Theoretical Computer Science
     url: https://theory.epfl.ch/WinterSchool2023/
     dates: "2023"
-    description: Partial financial support
+    description: Selected participant
   - title: Recipient of financial support from Microsoft Research India and IARCS-ACM India
     dates: "2022"
     description: To attend an academic conference

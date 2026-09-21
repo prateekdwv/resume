@@ -10,8 +10,7 @@ entries:
     department: Computer Science and Engineering
     # qualification-level: EQF level 8
     thesis:
-      title: Treading the Borders for Explicitness, Circuit Factoring, and Identity Testing
-      url: https://www.prateekdwivedi.in/papers/thesis.pdf
+      # Full title and link are listed in publications.yaml under Thesis and survey.
       milestones:
         - label: Thesis submitted
           date: "August 2024"
