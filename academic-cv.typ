@@ -1,5 +1,6 @@
 // Presentation only: the caller supplies the complete CV dictionary.
-#let academic-cv(cv, include-inactive: false, body) = {
+#let academic-cv(cv, include-inactive: false, expanded-header: auto, document-label: "Curriculum Vitae",
+  publication-entry-gap: 11pt, publication-title-gap: 3pt, show-publishers: auto, body) = {
   let ink = rgb("242424")
   let muted = rgb("555555")
   let link-color = rgb("24465C")
@@ -10,6 +11,7 @@
   let entry-gap = 11pt
   let group-gap = 15pt
   let title-gap = 8pt
+  let full-header = if expanded-header == auto { include-inactive } else { expanded-header }
   let visible(record) = include-inactive or (
     record.at("active", default: true) and record.at("application", default: true)
   )
@@ -29,7 +31,7 @@
     }
   }
 
-  set document(title: cv.profile.name + " — Curriculum Vitae", author: cv.profile.name)
+  set document(title: cv.profile.name + " — " + document-label, author: cv.profile.name)
   set page(
     paper: "a4",
     margin: (x: 19mm, y: 18mm),
@@ -119,13 +121,14 @@
       [#emph(venue)#if not year-shown { [ · #entry.dates] }],
     )
     if "note" in entry { detail.push(entry.note) }
-    if include-inactive and "publisher" in entry { detail.push([Publisher: #entry.publisher]) }
+    let publishers = if show-publishers == auto { include-inactive } else { show-publishers }
+    if publishers and "publisher" in entry { detail.push([Publisher: #entry.publisher]) }
     row([\[#number\]], [
       #strong(linked(entry.title, entry))
       #linebreak()
-      #v(3pt)
+      #v(publication-title-gap)
       #lines(detail)#supplementary(entry)
-    ], label-width: 9mm)
+    ], label-width: 9mm, bottom: publication-entry-gap)
   }
 
   let reference(entry) = {
@@ -264,14 +267,14 @@
           for address in cv.profile.at("additional-emails", default: ()) {
             contacts.push(email(address))
           }
-          if include-inactive and "personal-email" in cv.profile {
+          if full-header and "personal-email" in cv.profile {
             contacts.push(email(cv.profile.personal-email))
           }
           contacts.join([ · ])
       }
       #linebreak()
       #link(cv.profile.website.url, cv.profile.website.label)
-      #if include-inactive {
+      #if full-header {
         [#linebreak()#lines(cv.profile.address.split("\n"))]
         if "phone" in cv.profile { [#linebreak()#cv.profile.phone] }
       }

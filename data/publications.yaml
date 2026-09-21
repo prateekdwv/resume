@@ -23,6 +23,11 @@ entries:
     dates: "2026"
     authors: with Benedikt Pago and Tim Seppelt
     venue: STOC 2026 · ACM Symposium on Theory of Computing
+    links:
+      - label: Conference version
+        url: https://doi.org/10.1145/3798129.3800779
+      - label: Full version
+        url: https://arxiv.org/abs/2601.09343
   - title: On Closure Properties of Read-Once Oblivious Algebraic Branching Programs
     category: published
     sort-year: 2026
@@ -33,8 +38,10 @@ entries:
       Sébastien Tavenas
     venue: ITCS 2026 · Innovations in Theoretical Computer Science
     links:
+      - label: Conference version
+        url: https://doi.org/10.4230/LIPIcs.ITCS.2026.9
       - label: Full version
-        url: https://www.prateekdwivedi.in/papers/ro-nonclosure.pdf
+        url: https://arxiv.org/abs/2509.10725
   - title: A primer on the closure of algebraic complexity classes under factoring
     category: thesis-survey
     sort-year: 2025
@@ -51,6 +58,11 @@ entries:
     authors: with C. S. Bhargav, Shiteng Chen, Radu Curticapean
     venue: MFCS 2025 · International Symposium on Mathematical Foundations of Computer Science
     publisher: LIPIcs
+    links:
+      - label: Conference version
+        url: https://doi.org/10.4230/LIPIcs.MFCS.2025.19
+      - label: Full version
+        url: https://doi.org/10.48550/arXiv.2505.22894
   - title: Treading the Borders for Explicitness, Circuit Factoring, and Identity Testing
     category: thesis-survey
     sort-year: 2025
@@ -71,6 +83,8 @@ entries:
     links:
       - label: Conference version
         url: https://www.prateekdwivedi.in/papers/PresentableVNP-confversion.pdf
+      - label: Full version
+        url: https://cse.iitk.ac.in/users/nitin/papers/PresentableVNP.pdf
       - label: Talk video
         url: https://www.youtube.com/watch?v=V1XWkX_ZSZQ
   - title: Lower Bounds for the Sum of Small-Size Algebraic Branching Programs
@@ -79,13 +93,15 @@ entries:
     url: https://doi.org/10.1016/j.tcs.2025.115214
     dates: "2025"
     authors: with C. S. Bhargav and Nitin Saxena
-    venue: Theoretical Computer Science · 2025
+    venue: Theoretical Computer Science · 2025 (Invited journal version)
     note: >-
-      Preliminary version appeared in TAMC 2024 · Conference of Theory and
+      TAMC 2024 · Conference of Theory and
       Applications of Models of Computation
     links:
       - label: Conference version
         url: https://www.prateekdwivedi.in/papers/smABP-lowerbounds-confversion.pdf
+      - label: Journal version
+        url: https://doi.org/10.1016/j.tcs.2025.115214
   - title: Demystifying the border of depth-3 algebraic circuits
     category: published
     sort-year: 2021
@@ -96,6 +112,8 @@ entries:
     publisher: IEEE
     note: Invited in the special issue of SIAM Journal on Computing (SICOMP)
     links:
+      - label: Conference version
+        url: https://doi.org/10.1109/FOCS52979.2021.00018
       - label: Full version
         url: https://www.prateekdwivedi.in/papers/border-depth3-fullversion.pdf
       - label: Talk video
@@ -110,7 +128,9 @@ entries:
     publisher: LIPIcs
     note: The full version is to appear in Theory of Computing (ToC), 2026
     links:
-      - label: Full version
+      - label: Conference version
+        url: https://doi.org/10.4230/LIPIcs.CCC.2021.11
+      - label: Journal version
         url: https://www.prateekdwivedi.in/papers/pit-depth4-didi-fullversion.pdf
       - label: Talk video
         url: https://youtu.be/kK4283WJ7HI

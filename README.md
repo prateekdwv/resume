@@ -10,6 +10,7 @@ template produces a selected application CV or an inclusive master CV.
 - `data/*.yaml`: one file per CV section, including inactive entries.
 - `cv-data.typ`: loads the YAML files in order.
 - `resume.typ`: build input validation and template entry point.
+- `publication-list.typ`: standalone publication list using the same YAML and renderer.
 - `academic-cv.typ`: typography, layout, selection, and rendering components.
 - `Lohit-Devanagari.ttf`: the font used for Hindi text.
 
@@ -19,6 +20,29 @@ Tested with **Typst 0.15.1**. Download the compiler from the
 [official releases](https://github.com/typst/typst/releases/tag/v0.15.1), extract it,
 and put the executable's directory on your `PATH`. Confirm with `typst --version`.
 No external Typst packages are required.
+
+### Standalone publication list
+
+`publication-list.typ` uses the same profile and publication YAML as the CV,
+including its category order, coauthors, links and status notes. It contains no
+duplicated publication facts. There is one version, always including all retained
+details and records. Publication spacing is 18 pt between records and 5 pt after
+titles to separate the fuller entries clearly; the CV's defaults remain unchanged. Pagination
+is natural, so additional publications may create another page.
+
+```powershell
+New-Item -ItemType Directory -Force build | Out-Null
+typst compile --font-path . --pdf-standard ua-1 publication-list.typ build/publication.pdf
+typst watch --font-path . --pdf-standard ua-1 publication-list.typ build/publication.pdf
+```
+
+The publication list displays retained supplementary links but omits publisher
+fields; no build input switches between versions. Its header matches the application
+CV: academic emails and website, without the personal email, phone or expanded address.
+The older fellowship-specific selected/additional grouping
+and introductory claims are not reused; the current YAML is authoritative.
+
+### Full CV
 
 Run from the repository root in PowerShell:
 
