@@ -1,7 +1,12 @@
 name: Prateek Dwivedi
 alternate-name: प्रतीक द्विवेदी
-address: Laboratoire de Mathématiques, USMB, Office 121, France
+address: |-
+  Laboratoire de Mathématiques
+  USMB · Office 121
+  France
 email: dwivedi@cs.uni-saarland.de
+additional-emails:
+  - prateek.dwivedi@univ-smb.fr
 personal-email: prateek.dwv21@gmail.com
 phone: "+45 31813618"
 website:

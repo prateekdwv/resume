@@ -1,16 +1,48 @@
 title: Professional Contributions
+application-title: Academic Service
 kind: contribution
 entries:
-  - title: Reviewer for Conferences
-    descriptions:
-      - >-
-        ITCS 2027, SODA 2027, RANDOM 2026, MFCS 2026, COCOON 2026, CCC 2026, ICALP 2026,
-        SEA 2026, STOC 2026, LATIN 2026,
-        STACS 2026, FOCS 2025, ITCS 2025, STOC 2025, STOC 2024, FSTTCS 2024,
-        FOCS 2023, ISSAC 2023, STOC 2023, CCC 2022, ITCS 2022, SODA 2021, FOCS 2021
-  - title: Reviewer for journals
-    descriptions:
-      - SIAM Journal on Computing
-  - title: Seminar Organiser at CSE, IIT Kanpur
-    descriptions:
-      - Regularly organise talks and seminars in a department special interest group (SIGTACS)
+  - title: Workshop and seminar organisation
+    activities:
+      - title: 9th Workshop on Algebraic Complexity Theory
+        url: https://sites.google.com/view/wact2026/
+        role: Co-organiser
+        acronym: WACT 2026
+        location: Copenhagen
+        dates: Jun 2026
+        sort-year: 2026
+      - title: SIGTACS
+        location: CSE, IIT Kanpur
+        dates: 2019–2024
+        sort-year: 2024
+        description: Regularly organise talks and seminars in a department special interest group (SIGTACS)
+  - title: Conference reviewing
+    reviewing:
+      - year: 2027
+        conferences: [ITCS, SODA]
+      - year: 2026
+        conferences: [RANDOM, MFCS, COCOON, CCC, ICALP, SEA, STOC, LATIN, STACS]
+      - year: 2025
+        conferences: [FOCS, ITCS, STOC]
+      - year: 2024
+        conferences: [STOC, FSTTCS]
+      - year: 2023
+        conferences: [FOCS, ISSAC, STOC]
+      - year: 2022
+        conferences: [CCC, ITCS]
+      - year: 2021
+        conferences: [SODA, FOCS]
+  - title: Journal reviewing
+    reviewing:
+      - year: 2026
+        journals:
+          - acronym: SICOMP
+            name: SIAM Journal on Computing
+      - year: 2023
+        journals:
+          - acronym: SICOMP
+            name: SIAM Journal on Computing
+      - year: 2021
+        journals:
+          - acronym: SICOMP
+            name: SIAM Journal on Computing

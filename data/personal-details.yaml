@@ -1,5 +1,6 @@
 title: Personal Details
 kind: detail
+application: false
 entries:
   - label: Name
     value: Prateek Dwivedi (प्रतीक द्विवेदी)

@@ -1,6 +1,7 @@
 title: Projects
 kind: project
 active: false
+application: false
 entries:
   - active: false
     category: "Course Project:"

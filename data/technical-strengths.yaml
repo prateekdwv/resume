@@ -1,6 +1,7 @@
 title: Technical Strengths
 kind: detail
 active: false
+application: false
 entries:
   - active: false
     label: Computer Languages

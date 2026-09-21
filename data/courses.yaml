@@ -1,6 +1,7 @@
 title: Relevant Courses
 kind: course
 active: false
+application: false
 entries:
   - active: false
     title: Arithmetic Circuit Complexity

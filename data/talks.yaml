@@ -1,37 +1,84 @@
 title: Academic Talks and Seminars
+application-title: Talks and Presentations
 kind: talk
 entries:
-  - title: Non-Closure properties in algebraic complexity
-    dates: "2025"
-    venue: IIT Delhi, India
+  - title: On Closure Properties of Read-Once Oblivious Algebraic Branching Programs
+    children:
+      - venue: Highlights of Algorithms (HALG), Stockholm, Sweden
+        dates: "Jun 2026"
+        sort-year: 2026
+        sort-month: 6
+        description: Talk and poster presentation
+        url: https://2026.highlightsofalgorithms.org/
+  - title: Non-Closure Properties in Algebraic Complexity
+    # IIT Delhi's original title used lowercase "properties in algebraic complexity".
+    children:
+      - venue: University of Cambridge, UK
+        dates: "Mar 2026"
+        sort-year: 2026
+        sort-month: 3
+      - venue: SIGTACS, IIT Kanpur
+        dates: "Dec 2025"
+        sort-year: 2025
+        sort-month: 12
+      - venue: IIT Delhi, India
+        # 10 November: https://homecse.iitd.ac.in/event/non-closure-properties-in-algebraic-complexity-by-dr-prateek-dwivedi/
+        dates: "Nov 2025"
+        sort-year: 2025
+        sort-month: 11
   - title: Monotone Bounded-Depth Complexity of Homomorphism Polynomials
-    dates: "2024"
-    venue: ARCO, Malmö University, Sweden
+    children:
+      - venue: ARCO, Malmö University, Sweden
+        # 22 November, 32nd ARCO: https://mau.se/en/about-us/management-and-organisation/faculty-of-technology-and-society/department-of-computer-science-and-media-technology/arco/
+        dates: "Nov 2024"
+        sort-year: 2024
+        sort-month: 11
   - title: Presentable Version of Border Complexity and Applications to Circuit Factoring
     children:
       - venue: Ulm University, Germany
-        dates: "2024"
+        dates: "Sep 2024"
+        sort-year: 2024
+        sort-month: 9
       - venue: Welcome talk at the Theory Group, ITU, and BARC, KU
-        dates: "2024"
+        # 15 November: https://barc.ku.dk/events/barc-talk-by-prateek-dwivedi/
+        dates: "Nov 2024"
+        sort-year: 2024
+        sort-month: 11
   - title: Treading the Border Complexity and Identity Testing Paradigms
-    dates: "2022"
-    venue: Thesis Defense, IIT Kanpur
-  - title: Deterministic identity testing paradigms for bounded top-fanin depth 4 circuits
-    dates: "2021"
-    venue: Invited Talk, CS Theory Seminar at Georgetown University
+    children:
+      - venue: Thesis Defense, IIT Kanpur
+        dates: "Mar 2025"
+        sort-year: 2025
+        sort-month: 3
   - title: Deterministic identity testing paradigms for bounded top-fanin depth-4 circuits
+    # Georgetown's original title: Deterministic identity testing paradigms for bounded top-fanin depth 4 circuits
+    # Its duplicate "CS Theory Seminar at Georgetown University" record is consolidated below.
     children:
       - venue: Workshop on Algebra and Computation (WAC), Göteborg
-        dates: "2023"
+        # Event dates 14–16 August: https://sites.google.com/view/wac2023/home
+        dates: "Aug 2023"
+        sort-year: 2023
+        sort-month: 8
       - venue: 7th Workshop on Algebraic Complexity Theory (WACT), Warwick
-        dates: "2023"
-      - venue: CS Theory Seminar at Georgetown University
+        # Event dates 27–31 March: https://www.dcs.warwick.ac.uk/~u2270030/wact/
+        dates: "Mar 2023"
+        sort-year: 2023
+        sort-month: 3
+      - venue: Invited Talk, CS Theory Seminar at Georgetown University
         dates: "2021"
+        sort-year: 2021
       - venue: Conference Presentation, (CCC)
-        dates: "2021"
+        # Paper scheduled 21 July: https://computationalcomplexity.org/Archive/2021/program.html
+        dates: "Jul 2021"
+        sort-year: 2021
+        sort-month: 7
   - title: Information-Theoretic And Algorithmic Thresholds For Group Testing
-    dates: "2020"
-    venue: PhD Comprehensive Evaluation, IIT Kanpur
+    children:
+      - venue: PhD Comprehensive Evaluation, IIT Kanpur
+        dates: "2020"
+        sort-year: 2020
   - title: On Approximative Closure of Algebraic Complexity Classes
-    dates: "2019"
-    venue: SIGTACS, IIT Kanpur
+    children:
+      - venue: SIGTACS, IIT Kanpur
+        dates: "2019"
+        sort-year: 2019
