@@ -21,3 +21,11 @@ entries:
       label: "Adviser:"
       name: Prof Nutan Limaye
       url: https://www.itu.dk/~nuli/
+  - institution: Indian Institute of Technology Kanpur
+    location: Kanpur, India
+    role: Research Assistant
+    dates: "2023 – 2024"
+    adviser:
+      label: "Supervisor:"
+      name: Prof Nitin Saxena
+      url: https://cse.iitk.ac.in/users/nitin/

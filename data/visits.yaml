@@ -31,15 +31,15 @@ entries:
   - title: Tata Institute of Fundamental Research (TIFR), Mumbai
     dates: "2025"
     host: "Host: Prof Mrinal Kumar"
-  - title: Ulm University, Germany
-    # Month of the Ulm talk confirmed by the author.
-    dates: "Sep 2024"
-    host: "Host: Prof Thomas Thierauf"
   - title: Algorithmic Research-Cooperation around Oresund (ARCO)
     url: https://mau.se/en/about-us/management-and-organisation/faculty-of-technology-and-society/department-of-computer-science-and-media-technology/arco/
     # 32nd ARCO: 22 November 2024 (linked programme).
     dates: "Nov 2024"
     location: Malmö University, Sweden
+  - title: Ulm University, Germany
+    # Month of the Ulm talk confirmed by the author.
+    dates: "Sep 2024"
+    host: "Host: Prof Thomas Thierauf"
   - title: Summer of Counting and Algebraic Complexity
     url: https://sites.google.com/view/count-alg-summer
     # Personal visit month confirmed by the author.

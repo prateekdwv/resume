@@ -153,8 +153,8 @@ the visual identity. Change these presentation settings in the template only.
 Short records stay together; long records and nested lists can cross pages. No
 fixed page count or section-specific page breaks are used.
 
-Spacing is controlled by named values near the top of `academic-cv.typ`: 7 pt
-between related rows, 14 pt between ordinary entries, 18 pt between titled groups
+Spacing is controlled by named values near the top of `academic-cv.typ`: 6 pt
+between related rows, 11 pt between ordinary entries, 15 pt between titled groups
 and 8 pt below group titles. Section headings have 16 pt above and
 12 pt of bottom padding. Paragraph leading stays at 0.65 em; extra space separates
 records rather than spreading out every line. Publication titles have an additional
@@ -173,7 +173,7 @@ dark grey, aligned with the section's content column, with 8 pt below and kept
 with the first entry. Subsequent categories have an additional 14 pt above.
 Entry titles remain 11 pt bold.
 
-- The PhD research period is **2018–2024**. The thesis was submitted in **2024**
+- The PhD period is **2018–2025**, through the defence. The thesis was submitted in **2024**
   and defended in **March 2025**, confirmed by the author; Education explicitly
   distinguishes these milestones. The master publication list retains the thesis's
   separate **2025** record. The defence talk also remains dated **March 2025**.

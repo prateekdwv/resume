@@ -4,7 +4,9 @@ kind: teaching
 entries:
   - title: Undergraduate Project, ITU Copenhagen
     dates: "2025"
-    description: Mentoring Thøger Bro and Emil Andreas Sondum Jointly with Prof Riko Jacob
+    description: "Project topic: Edit distance algorithms"
+    descriptions:
+      - Mentoring Thøger Bro and Emil Andreas Sondum jointly with Prof Riko Jacob
   - title: Head Tutor at CSE, IIT Kanpur
     dates: "2024"
     description: >-
@@ -12,7 +14,7 @@ entries:
       logistical support for Data Structures and Algorithms course
   - title: Mathematics for Computer Science, IIT Kanpur
     dates: "2023"
-    description: Adhyayan 2023, Summer School. Jointly with C. S. Bhargav
+    description: Course instructor, Adhyayan 2023 Summer School, jointly with C. S. Bhargav
   - title: Tutor and Teaching Assistant at CSE, IIT Kanpur
     children:
       - dates: "2022"

@@ -6,9 +6,9 @@
   let date-width = 27mm
   let gutter = 4mm
   // Separate levels of information: related rows, entries, and titled groups.
-  let row-gap = 7pt
-  let entry-gap = 14pt
-  let group-gap = 18pt
+  let row-gap = 6pt
+  let entry-gap = 11pt
+  let group-gap = 15pt
   let title-gap = 8pt
   let visible(record) = include-inactive or (
     record.at("active", default: true) and record.at("application", default: true)
@@ -251,17 +251,13 @@
   }
 
   block(above: 0pt, below: 10pt, breakable: false)[
-    #align(center)[
-      #text(size: 25pt, weight: "bold", cv.profile.name)
-      #linebreak()
-      #text(size: 12pt, cv.profile.alternate-name)
-    ]
+    #text(size: 25pt, weight: "bold", cv.profile.name)
+    #h(4mm)#text(size: 12pt, cv.profile.alternate-name)
     #v(8pt)
     #text(size: 10pt)[
-      #grid(columns: (1fr, 1fr), column-gutter: 8mm,
-        align: (left + top, right + top),
-        lines(cv.profile.address.split("\n")),
-        {
+      #cv.profile.affiliation
+      #linebreak()
+      #{
           let contacts = (email(cv.profile.email),)
           for address in cv.profile.at("additional-emails", default: ()) {
             contacts.push(email(address))
@@ -269,14 +265,15 @@
           if include-inactive and "personal-email" in cv.profile {
             contacts.push(email(cv.profile.personal-email))
           }
-          contacts.push(link(cv.profile.website.url, cv.profile.website.label))
-          if include-inactive and "phone" in cv.profile { contacts.push(cv.profile.phone) }
-          lines(contacts)
-        },
-      )
+          contacts.join([ · ])
+      }
+      #linebreak()
+      #link(cv.profile.website.url, cv.profile.website.label)
+      #if include-inactive {
+        [#linebreak()#lines(cv.profile.address.split("\n"))]
+        if "phone" in cv.profile { [#linebreak()#cv.profile.phone] }
+      }
     ]
-    #v(6pt)
-    #line(length: 100%, stroke: 0.5pt + ink)
   ]
 
   for section in cv.sections.filter(visible) {
