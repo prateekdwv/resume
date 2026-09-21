@@ -43,16 +43,18 @@
   set par(justify: false, leading: 0.65em, spacing: 0.4em)
   set list(indent: 3mm, body-indent: 2mm, spacing: 2pt)
   set heading(numbering: none, outlined: true)
-  show heading: it => block(above: 16pt, below: 0pt, inset: (bottom: 12pt), sticky: true)[
-    #text(size: 12pt, weight: "bold", it.body)
+  show heading.where(level: 1): it => block(above: 16pt, below: 0pt, inset: (bottom: 12pt), sticky: true)[
+    #text(size: 12pt, weight: "bold", it)
   ]
   show link: set text(fill: link-color)
 
   // Category labels share one style and follow each section's content column.
   let subheading(title, label-width: date-width, first: true) = {
+    show heading.where(level: 2): set text(size: 11pt, fill: muted, weight: "bold")
+    show heading.where(level: 2): set block(above: 0pt, below: 0pt)
     block(above: if first { 0pt } else { 14pt }, below: 0pt, inset: (bottom: 8pt), sticky: true)[
       #grid(columns: (label-width, 1fr), column-gutter: gutter,
-        [], text(size: 11pt, fill: muted, weight: "bold", title))
+        [], heading(level: 2, title))
     ]
   }
 
@@ -252,7 +254,7 @@
 
   block(above: 0pt, below: 10pt, breakable: false)[
     #text(size: 25pt, weight: "bold", cv.profile.name)
-    #h(4mm)#text(size: 12pt, cv.profile.alternate-name)
+    #h(4mm)#text(size: 12pt, lang: "hi", cv.profile.alternate-name)
     #v(8pt)
     #text(size: 10pt)[
       #cv.profile.affiliation

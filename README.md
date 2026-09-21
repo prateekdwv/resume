@@ -24,19 +24,19 @@ Run from the repository root in PowerShell:
 
 ```powershell
 New-Item -ItemType Directory -Force build | Out-Null
-typst compile --font-path . resume.typ build/resume.pdf
+typst compile --font-path . --pdf-standard ua-1 resume.typ build/resume.pdf
 ```
 
 Rebuild automatically while editing (stop with Ctrl+C):
 
 ```powershell
-typst watch --font-path . resume.typ build/resume.pdf
+typst watch --font-path . --pdf-standard ua-1 resume.typ build/resume.pdf
 ```
 
 Include all structured master content, including archived entries:
 
 ```powershell
-typst compile --font-path . --input include-inactive=true resume.typ build/resume-all.pdf
+typst compile --font-path . --pdf-standard ua-1 --input include-inactive=true resume.typ build/resume-all.pdf
 ```
 
 `include-inactive` accepts `true` or `false` and defaults to `false`. The default
@@ -164,6 +164,49 @@ References use two equal-width columns with a 12 mm gutter, in source order
 across each row. Each pair stays together across page breaks, with 10 pt between
 rows and no trailing padding after the final row. Reviewing years have 2 pt
 between rows. Names and emails remain clickable; roles and affiliations wrap naturally.
+
+## PDF accessibility
+
+Use the PDF/UA-1 build commands above. Typst also produces tagged PDFs without
+that flag, but `--pdf-standard ua-1` enables additional compiler checks. A passing
+build alone does not establish full accessibility or PDF/UA conformance.
+
+Main sections are semantic level-one headings; publication and service categories
+are level-two headings. Both levels appear in PDF bookmarks. Styling preserves
+the complete heading element. Paper titles, teaching roles and talk titles remain
+entry text. The document language is English, with the entire Hindi name explicitly
+marked as Hindi. Layout grids retain source order: date then content, publication
+number then record, and each referee's full details before the next referee.
+Typst automatically treats the repeated page footer as an artifact.
+
+Local validation with Typst 0.15.1:
+
+- Both PDF/UA-1 builds complete without diagnostics. The application has 10 H1
+  and 6 H2 tags; the inclusive version has 15 H1 and 6 H2 tags. Category bookmarks
+  are children of the appropriate section bookmarks.
+- All five application pages and all seven inclusive pages render identically
+  to their pre-accessibility baselines (PNG hash comparison at 80 and 65 ppi,
+  respectively), preserving typography and page breaks.
+- All 42 application and 52 inclusive URI annotations match the baseline,
+  including publication links and clickable email addresses.
+- PDF stream inspection confirms Hindi language tags, Unicode replacement text
+  for shaped Devanagari clusters, and footer artifact markers. These checks do
+  not substitute for reader copy/paste or screen-reader testing.
+- Contrast against white is 15.52:1 for body text (`#242424`), 7.46:1 for muted
+  text (`#555555`), and 9.97:1 for links (`#24465C`), above 4.5:1.
+
+Outstanding manual validation: use a tagged-PDF-capable reader and screen reader
+to navigate headings and links, read representative dated entries and all four
+referees, and copy/paste Hindi and accented names. Confirm the full Hindi name
+including its space and conjuncts is preserved; pronunciation also depends on
+the installed Hindi voice. No reader-based extraction, interactive screen-reader
+test, or independent PDF/UA validator was available in this validation session.
+Do not claim certified or complete accessibility until those checks are completed.
+Keep validation local rather than uploading personal CV data to online services.
+
+References: [Typst PDF export](https://typst.app/docs/reference/pdf/),
+[accessibility guide](https://typst.app/docs/guides/accessibility/), and
+[artifact handling](https://typst.app/docs/reference/pdf/artifact/).
 
 ## Content notes for future review
 
